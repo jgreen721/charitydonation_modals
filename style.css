@@ -69,10 +69,14 @@ body{
       padding:1em;
       margin:0 auto;
   }
+  
+  .nav-links-div{
+      width:40%;
+  }
 
   .nav-links{
       list-style:none;
-      width:40%;
+      /* width:40%; */
   }
 
   .nav-item{
@@ -399,22 +403,39 @@ body{
     opacity:1;
 }
 
+.burger{
+    display:none;
+
+}
+
 
 
   @media screen and (max-width:550px){
+
+  
 
   
       .modal-card-option{
           height:175px;
       }
 
+      .nav-links{
+          display:none;
+      }
 
+      .burger{
+          display:block;
+          z-index:1;
+          position:relative;
+          left:-50px;
+      }
 
       .small-screen-container{
         height:70vh;
         position:relative;
-        /* left:-25vw; */
+        left:-22vw;
         overflow:hidden;
+        width:90%;
     }
 
     .large-modal{
